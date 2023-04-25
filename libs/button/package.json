@@ -1,0 +1,23 @@
+{
+  "name": "react-button",
+  "version": "0.0.1",
+  "type": "module",
+  "license": "MIT",
+  "dependencies": {
+  },
+  "peerDependencies": {
+    "react": ">=16.14.0",
+    "react-dom": ">=16.14.0"
+  },
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./index.js",
+      "require": "./index.cjs"
+    },
+    "./index.css": "./index.css"
+  },
+  "module": "./index.js",
+  "main": "./index.cjs",
+  "types": "./src/index.d.ts"
+}

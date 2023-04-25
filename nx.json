@@ -5,11 +5,12 @@
   "npmScope": "nx-example",
   "tasksRunnerOptions": {
     "default": {
-      "runner": "nx-cloud",
+      "runner": "nx/tasks-runners/default",
       "options": {
-        "accessToken": "YmM1MGMwMTUtNzAyYi00ZjM4LWExNGUtZDM2ZjYyNzNiODAxfHJlYWQ=",
-        "cacheableOperations": ["build", "lint", "test"],
-        "parallel": 1
+        "cacheableOperations": [
+          "build"
+        ],
+        "parallel": 4
       }
     }
   },
@@ -34,7 +35,7 @@
       }
     }
   },
-  "defaultProject": "products",
+  "defaultProject": "react-button",
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "targetDefaults": {
     "build": {

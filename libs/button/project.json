@@ -1,0 +1,27 @@
+{
+  "name": "react-button",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/button/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nrwl/rollup:rollup",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "libs/button/dist",
+        "outputFileName": "",
+        "tsConfig": "libs/button/tsconfig.lib.json",
+        "format": ["esm", "cjs"],
+        "project": "libs/button/package.json",
+        "entryFile": "libs/button/src/index.ts",
+        "external": ["react", "react-dom", "react/jsx-runtime"],
+        "rollupConfig": "rollup.config.js",
+        "compiler": "babel",
+        "extractCss": true,
+        "generateExportsField": true
+      },
+      "dependsOn": ["^build"]
+    }
+  }
+}
