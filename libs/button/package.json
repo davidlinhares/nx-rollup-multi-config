@@ -1,5 +1,5 @@
 {
-  "name": "react-button",
+  "name": "@myorg/react-button",
   "version": "0.0.1",
   "type": "module",
   "license": "MIT",
@@ -10,6 +10,7 @@
     "react-dom": ">=16.14.0"
   },
   "exports": {
+    "./index.cjs.css": "./index.cjs.css",
     ".": {
       "types": "./src/index.d.ts",
       "import": "./index.js",
