@@ -5,7 +5,6 @@ const md5 = require('md5');
 
 module.exports = (config) => {
   const nxConfig = nrwlConfig(config);
-  console.log('NX CONFIG', nxConfig);
   const configWithoutPostCSS = nxConfig.plugins.filter((names) => names.name !== 'postcss');
   return {
       ...nxConfig,
